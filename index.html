@@ -12,32 +12,90 @@
 
 </head>
 <body>
+  <main>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <form class="contact__form" action="">
+        <div class="contact__inputs">
+          <div class="contact__name">
+            <div class="contact__input">
+              <label for="first-name" class="contact__label">First Name</label>
+              <input
+               type="text"
+               id="first-name"
+               name="first-name"
+              >
+              <span class="contact__error">This field is required</span>
+            </div>
+            <div class="contact__input">
+              <label for="last-name" class="contact__label">Last Name</label>
+              <input
+               type="text"
+               id="last-name"
+               name="last-name"
+              >
+              <span class="contact__error">This field is required</span>
+            </div>
+          </div>
 
-  Contact Us
+          <div class="contact__input">
+            <label for="email" class="contact__label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+            >
+            <span class="contact__error">Please enter a valid email address</span>
+          </div>
 
-  First Name
-  This field is required
+          <div class="contact__querytype">
+            <label class="contact__label">Query Type</label>
+            <div class="contact__options">
+              <div class="contact__input">
+                <input
+                  type="radio"
+                  id="general-enquiry"
+                  name="query-type"
+                >
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+              <div class="contact__input">
+                <input
+                  type="radio"
+                  id="support-request"
+                  name="query-type"
+                >
+                <label for="support-request">Support Request</label>
+              </div>
+            </div>
+            <span class="contact__error">Please select a query type</span>
+          </div>
 
-  Last Name
-  This field is required
+          <div class="contact__input">
+            <label for="message" class="contact__label">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <span class="contact__error">This field is required</span>
+          </div>
+        </div>
+        <div class="contact__consent">
+          <label for="consent" class="contact__label">
+            <input
+              type="checkbox" 
+              id="consent" 
+              name="consent"
+            >
+            I consent to being contacted by the team
+          </label>
+          <span class="contact__error">
+            To submit this form, please consent to being contacted
+          </span>
+        </div>
+        <button class="contact__button" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
+  
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
   
